@@ -32,6 +32,8 @@ jobs:
 
       - name: Configurer Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true   # active GitHub Pages automatiquement (aucun réglage manuel)
 
       - name: Téléverser le site (dossier racine)
         uses: actions/upload-pages-artifact@v3
