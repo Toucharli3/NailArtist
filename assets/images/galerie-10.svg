@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" role="img" aria-label="Photo de nail art (démonstration)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9D8CE"/>
+      <stop offset="1" stop-color="#6E4555"/>
+    </linearGradient>
+    <linearGradient id="nailgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#E9D8CE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="700" height="700" fill="url(#bg)"/>
+  <rect width="700" height="700" fill="url(#glow)"/>
+  <g opacity="0.96"><g transform="translate(413.6,248.2) rotate(32.0)"><rect x="-13" y="-78" width="26" height="94" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-64" r="4.5" fill="#B8933F"/><circle cx="0" cy="-48" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(455.0,291.8) rotate(61.0)"><rect x="-13" y="-88" width="26" height="104" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-74" r="4.5" fill="#B8933F"/><circle cx="0" cy="-58" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(470.0,350.0) rotate(90.0)"><rect x="-13" y="-94" width="26" height="110" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-80" r="4.5" fill="#B8933F"/><circle cx="0" cy="-64" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(455.0,408.2) rotate(119.0)"><rect x="-13" y="-88" width="26" height="104" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-74" r="4.5" fill="#B8933F"/><circle cx="0" cy="-58" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(413.6,451.8) rotate(148.0)"><rect x="-13" y="-78" width="26" height="94" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-64" r="4.5" fill="#B8933F"/><circle cx="0" cy="-48" r="3" fill="#ffffff" opacity=".85"/></g></g>
+  <circle cx="112" cy="140" r="5" fill="#ffffff" opacity=".5"/>
+  <circle cx="574" cy="546" r="7" fill="#B8933F" opacity=".55"/>
+  <text x="684" y="686" text-anchor="end" font-family="Georgia, serif" font-size="20" fill="#2B2422" opacity="0.32">Marbre & or</text>
+</svg>

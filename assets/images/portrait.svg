@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="900" viewBox="0 0 700 900" role="img" aria-label="Portrait (démonstration)">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#C9AE9E"/><stop offset="1" stop-color="#6E4555"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="900" fill="url(#pg)"/>
+  <g fill="#2B2422" opacity="0.18">
+    <circle cx="350.0" cy="360.0" r="140.0"/>
+    <path d="M126.0,900 Q350.0,495.00000000000006 574.0,900 Z"/>
+  </g>
+  <circle cx="350.0" cy="360.0" r="143.5" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="2"/>
+  <text x="350.0" y="878" text-anchor="middle" font-family="Georgia, serif" font-size="35" fill="#ffffff" opacity="0.85">Votre portrait</text>
+</svg>

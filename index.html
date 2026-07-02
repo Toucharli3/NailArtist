@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ================================================================
+       ⚙️  SEO — à personnaliser (voir GUIDE-PERSONNALISATION.md, étape 5)
+       ================================================================ -->
+  <title>L'Atelier Nacré — Nail Art & Beauté des Ongles</title>
+  <meta name="description" content="Prothésiste ongulaire & nail artist. Pose gel, semi-permanent, nail art sur-mesure et manucure russe. Prenez rendez-vous en quelques clics." />
+  <meta name="theme-color" content="#6E4555" />
+
+  <!-- Open Graph (aperçu lors du partage sur les réseaux) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="L'Atelier Nacré — Nail Art & Beauté des Ongles" />
+  <meta property="og:description" content="Pose gel, semi-permanent, nail art sur-mesure. Prenez rendez-vous." />
+  <meta property="og:image" content="assets/images/og-image.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Polices (Google Fonts). Pour changer : voir le guide, étape 2. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ================================================================
+       Données structurées (SEO local). Remplacez name, adresse,
+       téléphone, horaires par les vôtres. Aide Google à afficher
+       votre fiche (nom, avis, horaires) dans les résultats.
+       ================================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "L'Atelier Nacré",
+    "image": "assets/images/og-image.svg",
+    "description": "Prothésiste ongulaire & nail artist : pose gel, semi-permanent, nail art sur-mesure.",
+    "telephone": "+33 6 12 34 56 78",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue des Camélias",
+      "addressLocality": "Lyon",
+      "postalCode": "69002",
+      "addressCountry": "FR"
+    },
+    "openingHours": ["Tu-Fr 09:30-19:00", "Sa 09:30-17:00"],
+    "sameAs": ["https://instagram.com/", "https://www.tiktok.com/"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ============================= EN-TÊTE ============================= -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Accueil — L'Atelier Nacré">
+        <img class="mark" src="assets/images/logo.svg" alt="" width="38" height="38" />
+        <span>
+          <span class="brand-name">L'Atelier Nacré</span>
+          <span class="brand-sub">Nail Artist</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="menu" aria-label="Navigation principale">
+        <a href="#apropos">À propos</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-block mobile-cta" href="#contact">Réserver</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#contact">Réserver</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================= HERO ============================= -->
+    <section class="hero">
+      <img class="hero-blob one" src="assets/images/blob-1.svg" alt="" aria-hidden="true" />
+      <img class="hero-blob two" src="assets/images/blob-2.svg" alt="" aria-hidden="true" />
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="hero-kicker"><span class="dot"></span> Prothésiste ongulaire diplômée</span>
+          <h1>L'art de <em>sublimer</em><br />vos mains.</h1>
+          <p class="hero-text">
+            Pose gel, semi-permanent et nail art sur-mesure dans un cocon dédié à la beauté
+            de vos ongles. Des créations uniques, une hygiène irréprochable, un moment rien qu'à vous.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Prendre rendez-vous</a>
+            <a class="btn btn-ghost" href="#galerie">Voir la galerie</a>
+          </div>
+          <div class="hero-stats">
+            <div><div class="num">+500</div><div class="lbl">clientes conquises</div></div>
+            <div><div class="num">4,9<span style="font-size:1rem">/5</span></div><div class="lbl">note moyenne</div></div>
+            <div><div class="num">6 ans</div><div class="lbl">d'expérience</div></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="frame">
+            <!-- 📷 Remplacez par votre plus belle photo (portrait ou réalisation) -->
+            <img src="assets/images/hero.svg" alt="Réalisation nail art de démonstration" width="800" height="1000" />
+          </div>
+          <div class="hero-badge">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="txt"><strong>Avis vérifiés</strong><span>127 clientes ravies</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= BANDEAU VALEURS ========================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Nail Art sur-mesure</span><span>Hygiène irréprochable</span><span>Pose gel &amp; semi-permanent</span>
+        <span>Manucure russe</span><span>Produits vegan</span><span>Nail Art sur-mesure</span>
+        <span>Hygiène irréprochable</span><span>Pose gel &amp; semi-permanent</span><span>Manucure russe</span><span>Produits vegan</span>
+      </div>
+    </div>
+
+    <!-- ============================= À PROPOS ============================= -->
+    <section class="section" id="apropos">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <div class="frame">
+            <!-- 📷 Votre portrait -->
+            <img src="assets/images/portrait.svg" alt="Portrait de la nail artist (démonstration)" width="700" height="900" />
+          </div>
+          <span class="sign">Camille</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">À propos</p>
+          <h2 class="section-title">Passionnée par la beauté du détail</h2>
+          <p class="section-lead">
+            Je m'appelle <strong>Camille</strong>, prothésiste ongulaire depuis six ans. J'ai fait de
+            ma passion un métier : révéler la personnalité de chaque cliente à travers ses ongles.
+            Dans mon atelier, chaque rendez-vous est une parenthèse — un savoir-faire précis,
+            une écoute attentive et une hygiène sans compromis.
+          </p>
+          <div class="about-values">
+            <div class="value">
+              <div class="ic" aria-hidden="true">✦</div>
+              <h4>Sur-mesure</h4>
+              <p>Chaque création est pensée avec vous, selon vos envies et votre style.</p>
+            </div>
+            <div class="value">
+              <div class="ic" aria-hidden="true">✦</div>
+              <h4>Hygiène stricte</h4>
+              <p>Matériel stérilisé, usage unique privilégié, protocole rigoureux.</p>
+            </div>
+            <div class="value">
+              <div class="ic" aria-hidden="true">✦</div>
+              <h4>Produits de qualité</h4>
+              <p>Gels professionnels, vernis vegan, marques reconnues et respectueuses.</p>
+            </div>
+            <div class="value">
+              <div class="ic" aria-hidden="true">✦</div>
+              <h4>Moment cocon</h4>
+              <p>Un cadre calme et chaleureux pour prendre soin de vous en toute sérénité.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PRESTATIONS ============================= -->
+    <section class="section" id="prestations" style="background: var(--c-sand);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Prestations &amp; tarifs</p>
+          <h2 class="section-title">Des soins pensés pour vos ongles</h2>
+          <p class="section-lead center">
+            Tarifs « à partir de » — le prix final dépend de la longueur, du nail art et des finitions.
+            Un doute ? Écrivez-moi, je vous conseille avec plaisir.
+          </p>
+        </div>
+
+        <!-- 💶 Modifiez librement titres, descriptions, durées et prix -->
+        <div class="services-grid">
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Pose complète gel</h3>
+            <p>Construction, mise en forme et couleur pour des ongles solides et naturels.</p>
+            <div class="s-meta"><span class="price">45€ <small>/ dès</small></span><span class="dur">≈ 1 h 30</span></div>
+          </article>
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Vernis semi-permanent</h3>
+            <p>Couleur brillante et tenue jusqu'à 3 semaines, sans abîmer l'ongle naturel.</p>
+            <div class="s-meta"><span class="price">28€ <small>/ dès</small></span><span class="dur">≈ 45 min</span></div>
+          </article>
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Nail art sur-mesure</h3>
+            <p>Motifs, French, chrome, strass… une création unique, imaginée avec vous.</p>
+            <div class="s-meta"><span class="price">+10€ <small>/ dès</small></span><span class="dur">variable</span></div>
+          </article>
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Remplissage gel</h3>
+            <p>Entretien de votre pose toutes les 3 à 4 semaines pour une tenue parfaite.</p>
+            <div class="s-meta"><span class="price">38€ <small>/ dès</small></span><span class="dur">≈ 1 h 15</span></div>
+          </article>
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Manucure russe</h3>
+            <p>Soin précis des cuticules à l'e-file pour un rendu net et durable.</p>
+            <div class="s-meta"><span class="price">32€ <small>/ dès</small></span><span class="dur">≈ 1 h</span></div>
+          </article>
+          <article class="service reveal">
+            <div class="s-ic" aria-hidden="true">✦</div>
+            <h3>Dépose &amp; soin</h3>
+            <p>Retrait en douceur et soin réparateur pour retrouver des ongles sains.</p>
+            <div class="s-meta"><span class="price">18€ <small>/ dès</small></span><span class="dur">≈ 30 min</span></div>
+          </article>
+        </div>
+        <p class="services-note">💳 Paiement CB, espèces &amp; carte cadeau — Acompte demandé à la réservation.</p>
+      </div>
+    </section>
+
+    <!-- ============================= GALERIE ============================= -->
+    <section class="section" id="galerie">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Galerie</p>
+          <h2 class="section-title">Mes dernières créations</h2>
+          <p class="section-lead center">Un aperçu de mon univers. Retrouvez toutes mes réalisations sur Instagram.</p>
+        </div>
+
+        <!-- Filtres (le JS gère l'affichage) -->
+        <div class="filters reveal" role="tablist" aria-label="Filtrer la galerie">
+          <button class="filter active" data-filter="all">Tout</button>
+          <button class="filter" data-filter="gel">Pose gel</button>
+          <button class="filter" data-filter="nailart">Nail art</button>
+          <button class="filter" data-filter="french">French</button>
+          <button class="filter" data-filter="entretien">Entretien</button>
+        </div>
+
+        <!-- 📷 Remplacez chaque image par vos photos. data-cat = catégorie du filtre -->
+        <div class="gallery reveal" id="gallery">
+          <figure class="gallery-item" data-cat="gel"><img src="assets/images/galerie-01.svg" alt="Pose gel" loading="lazy" /><figcaption class="cap"><span class="tag">Pose gel</span>Pose gel nude</figcaption></figure>
+          <figure class="gallery-item" data-cat="nailart"><img src="assets/images/galerie-02.svg" alt="Nail art fleuri" loading="lazy" /><figcaption class="cap"><span class="tag">Nail art</span>Motif fleuri</figcaption></figure>
+          <figure class="gallery-item" data-cat="french"><img src="assets/images/galerie-03.svg" alt="French moderne" loading="lazy" /><figcaption class="cap"><span class="tag">French</span>French moderne</figcaption></figure>
+          <figure class="gallery-item" data-cat="nailart"><img src="assets/images/galerie-04.svg" alt="Chrome miroir" loading="lazy" /><figcaption class="cap"><span class="tag">Nail art</span>Chrome miroir</figcaption></figure>
+          <figure class="gallery-item" data-cat="gel"><img src="assets/images/galerie-05.svg" alt="Babyboomer" loading="lazy" /><figcaption class="cap"><span class="tag">Pose gel</span>Babyboomer</figcaption></figure>
+          <figure class="gallery-item" data-cat="entretien"><img src="assets/images/galerie-06.svg" alt="Remplissage" loading="lazy" /><figcaption class="cap"><span class="tag">Entretien</span>Remplissage soigné</figcaption></figure>
+          <figure class="gallery-item" data-cat="nailart"><img src="assets/images/galerie-07.svg" alt="Ongles bijoux" loading="lazy" /><figcaption class="cap"><span class="tag">Nail art</span>Ongles bijoux</figcaption></figure>
+          <figure class="gallery-item" data-cat="french"><img src="assets/images/galerie-08.svg" alt="French couleur" loading="lazy" /><figcaption class="cap"><span class="tag">French</span>French couleur</figcaption></figure>
+          <figure class="gallery-item" data-cat="gel"><img src="assets/images/galerie-09.svg" alt="Semi-permanent" loading="lazy" /><figcaption class="cap"><span class="tag">Pose gel</span>Semi-permanent</figcaption></figure>
+          <figure class="gallery-item" data-cat="nailart"><img src="assets/images/galerie-10.svg" alt="Marbre et or" loading="lazy" /><figcaption class="cap"><span class="tag">Nail art</span>Marbre &amp; or</figcaption></figure>
+          <figure class="gallery-item" data-cat="entretien"><img src="assets/images/galerie-11.svg" alt="Manucure russe" loading="lazy" /><figcaption class="cap"><span class="tag">Entretien</span>Manucure russe</figcaption></figure>
+          <figure class="gallery-item" data-cat="french"><img src="assets/images/galerie-12.svg" alt="Micro-French" loading="lazy" /><figcaption class="cap"><span class="tag">French</span>Micro-French</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= AVIS ============================= -->
+    <section class="section reviews" id="avis">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Avis clientes</p>
+          <h2 class="section-title">Elles en parlent mieux que moi</h2>
+        </div>
+        <div class="reviews-grid">
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <p>« Un travail d'une précision folle. Mes ongles tiennent 4 semaines sans un accroc, et le nail art est toujours canon. »</p>
+            <div class="who"><span class="av" aria-hidden="true">L</span><span><strong>Léa M.</strong><span>Cliente depuis 2 ans</span></span></div>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <p>« Accueil adorable, salon impeccable et des créations uniques. Je ne confierais mes mains à personne d'autre. »</p>
+            <div class="who"><span class="av" aria-hidden="true">S</span><span><strong>Sarah B.</strong><span>Manucure russe</span></span></div>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <p>« Camille a compris exactement ce que je voulais pour mon mariage. Des ongles sublimes qui ont fait sensation ! »</p>
+            <div class="who"><span class="av" aria-hidden="true">I</span><span><strong>Inès R.</strong><span>Nail art mariage</span></span></div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FAQ ============================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 class="section-title">Tout ce qu'il faut savoir</h2>
+        </div>
+        <div class="faq-grid reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Combien de temps tient une pose ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Une pose gel tient en moyenne 3 à 4 semaines. Un remplissage régulier prolonge la tenue et protège l'ongle naturel.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Comment prendre rendez-vous ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Via le formulaire en bas de page, par téléphone ou en message privé sur Instagram. Un acompte confirme le créneau.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Que faire en cas d'empêchement ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Prévenez-moi au moins 48 h à l'avance pour reporter sans frais. L'acompte reste valable pour un prochain rendez-vous.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Les produits sont-ils sûrs ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Oui : gels professionnels certifiés, vernis vegan et sans HEMA sur demande, matériel stérilisé après chaque cliente.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Puis-je venir avec une ancienne pose ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Bien sûr. La dépose est incluse si la pose a été faite à l'atelier, ou facturée en supplément si elle vient d'ailleurs.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Proposez-vous des cartes cadeaux ?<span class="chev" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Oui, pour le montant ou la prestation de votre choix — l'idée cadeau parfaite. Demandez-moi par message.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section" id="contact" style="background: var(--c-sand);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Réservation</p>
+          <h2 class="section-title">Réservez votre moment</h2>
+          <p class="section-lead center">Dites-moi ce qui vous ferait plaisir, je reviens vers vous très vite pour fixer un créneau.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-row">
+              <div class="ic" aria-hidden="true">✆</div>
+              <div><h4>Téléphone</h4><a href="tel:+33612345678">06 12 34 56 78</a></div>
+            </div>
+            <div class="info-row">
+              <div class="ic" aria-hidden="true">✉</div>
+              <div><h4>E-mail</h4><a href="mailto:contact@atelier-nacre.fr">contact@atelier-nacre.fr</a></div>
+            </div>
+            <div class="info-row">
+              <div class="ic" aria-hidden="true">◎</div>
+              <div><h4>Instagram</h4><a href="https://instagram.com/" target="_blank" rel="noopener">@latelier.nacre</a></div>
+            </div>
+            <div class="info-row">
+              <div class="ic" aria-hidden="true">⌖</div>
+              <div><h4>Adresse</h4><p>12 rue des Camélias, 69002 Lyon</p></div>
+            </div>
+
+            <div class="hours">
+              <h4>Horaires</h4>
+              <ul>
+                <li><span>Lundi</span><span class="closed">Fermé</span></li>
+                <li><span>Mardi – Vendredi</span><span>9 h 30 – 19 h 00</span></li>
+                <li><span>Samedi</span><span>9 h 30 – 17 h 00</span></li>
+                <li><span>Dimanche</span><span class="closed">Fermé</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Formulaire : voir GUIDE-PERSONNALISATION.md (étape 6) pour le rendre fonctionnel -->
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="form-success" id="formSuccess" role="status">
+              Merci ! Votre demande est prête. Votre logiciel de messagerie va s'ouvrir pour l'envoyer. ✨
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="nom">Prénom &amp; nom</label>
+                <input type="text" id="nom" name="nom" autocomplete="name" required placeholder="Ex. Léa Martin" />
+              </div>
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="06 …" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr" />
+            </div>
+            <div class="field">
+              <label for="presta">Prestation souhaitée</label>
+              <select id="presta" name="presta">
+                <option>Pose complète gel</option>
+                <option>Vernis semi-permanent</option>
+                <option>Nail art sur-mesure</option>
+                <option>Remplissage gel</option>
+                <option>Manucure russe</option>
+                <option>Dépose &amp; soin</option>
+                <option>Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" placeholder="Vos disponibilités, vos envies, une inspiration…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
+            <p class="form-note">En envoyant ce formulaire, vous acceptez d'être recontactée au sujet de votre demande.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="#top" aria-label="L'Atelier Nacré">
+            <img class="mark" src="assets/images/logo.svg" alt="" width="38" height="38" />
+            <span>
+              <span class="brand-name">L'Atelier Nacré</span>
+              <span class="brand-sub">Nail Artist</span>
+            </span>
+          </a>
+          <p class="footer-about">Prothésiste ongulaire & nail artist. L'art de sublimer vos mains, un rendez-vous à la fois.</p>
+          <div class="socials">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+            <a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">✦</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="#apropos">À propos</a>
+          <a href="#prestations">Prestations</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#avis">Avis</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+33612345678">06 12 34 56 78</a>
+          <a href="mailto:contact@atelier-nacre.fr">contact@atelier-nacre.fr</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">@latelier.nacre</a>
+          <a href="#contact">Prendre rendez-vous</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> L'Atelier Nacré — Tous droits réservés.</span>
+        <span>Mentions légales · Site conçu avec soin 🤍</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
