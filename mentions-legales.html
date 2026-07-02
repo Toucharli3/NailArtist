@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales — L'Atelier Nacré</title>
+  <meta name="description" content="Mentions légales du site L'Atelier Nacré." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .legal { max-width: 760px; }
+    .legal h1 { font-family: var(--font-title); color: var(--c-plum); font-size: clamp(2rem,5vw,3rem); margin: 0 0 8px; }
+    .legal h2 { font-family: var(--font-title); color: var(--c-plum); font-size: 1.5rem; margin: 34px 0 8px; }
+    .legal p, .legal li { color: var(--c-muted); }
+    .legal .back { display: inline-block; margin-top: 40px; }
+    .legal .todo { color: var(--c-blush); font-style: italic; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil — L'Atelier Nacré">
+        <img class="mark" src="assets/images/logo.svg" alt="" width="38" height="38" />
+        <span><span class="brand-name">L'Atelier Nacré</span><span class="brand-sub">Nail Artist</span></span>
+      </a>
+      <a class="btn btn-primary" href="index.html#contact">Réserver</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container legal">
+      <!-- ⚖️ À COMPLÉTER avec vos informations réelles (voir GUIDE-PERSONNALISATION.md) -->
+      <p class="eyebrow">Informations légales</p>
+      <h1>Mentions légales</h1>
+      <p>Conformément à la loi pour la confiance dans l'économie numérique (LCEN).</p>
+
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>L'Atelier Nacré</strong> — <span class="todo">[Nom &amp; prénom de l'exploitante]</span><br />
+        Statut : <span class="todo">[micro-entreprise / auto-entrepreneur / société]</span><br />
+        Adresse : <span class="todo">[12 rue des Camélias, 69002 Lyon]</span><br />
+        SIRET : <span class="todo">[votre numéro SIRET]</span><br />
+        E-mail : <a href="mailto:contact@atelier-nacre.fr">contact@atelier-nacre.fr</a><br />
+        Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a>
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Site hébergé par <strong>GitHub Pages</strong> — GitHub, Inc.,<br />
+        88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L'ensemble des contenus (textes, photographies, créations, logo) est la propriété
+        exclusive de L'Atelier Nacré, sauf mention contraire. Toute reproduction sans
+        autorisation est interdite.
+      </p>
+
+      <h2>Données personnelles</h2>
+      <p>
+        Les informations transmises via le formulaire de contact servent uniquement à
+        répondre à votre demande de rendez-vous et ne sont ni cédées ni revendues.
+        Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de
+        suppression de vos données en écrivant à l'adresse e-mail ci-dessus.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>Ce site n'utilise aucun cookie de suivi ni outil de mesure d'audience.</p>
+
+      <a class="btn btn-ghost back" href="index.html">← Retour au site</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <span>© <span id="year">2026</span> L'Atelier Nacré — Tous droits réservés.</span>
+        <a href="index.html">Accueil</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

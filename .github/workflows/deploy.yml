@@ -5,7 +5,9 @@ name: Déployer sur GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    # Se déclenche sur la branche par défaut du dépôt (actuelle) et sur main
+    # (si vous renommez/fusionnez plus tard). Ajoutez votre branche si besoin.
+    branches: ["main", "master", "claude/nail-artist-portfolio-site-5ujbmv"]
   workflow_dispatch: {}   # permet de relancer manuellement depuis l'onglet Actions
 
 permissions:
