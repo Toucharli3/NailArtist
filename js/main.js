@@ -40,15 +40,47 @@
     });
   }
 
-  /* ---------- 4. Filtres de la galerie ---------- */
+  /* ---------- 4. Galerie : rendu depuis content/gallery.json ----------
+     Les photos sont une simple liste dans content/gallery.json — modifiable
+     à la main ou via le panneau d'administration. Ajouter une photo = ajouter
+     une entrée { image, caption, category } et déposer le fichier image.
+  */
+  function escapeHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function catLabel(cat) {
+    return { gel: 'Pose gel', nailart: 'Nail art', french: 'French', entretien: 'Entretien' }[cat] || '';
+  }
+  function renderGallery(list) {
+    var gallery = document.getElementById('gallery');
+    if (!gallery || !Array.isArray(list)) return;
+    gallery.innerHTML = list.map(function (it) {
+      var cap = escapeHtml(it.caption);
+      var tag = catLabel(it.category);
+      return '<figure class="gallery-item" data-cat="' + escapeHtml(it.category) + '">' +
+        '<img src="' + escapeHtml(it.image) + '" alt="' + (cap || 'Réalisation nail art') + '" loading="lazy" />' +
+        (cap ? '<figcaption class="cap">' + (tag ? '<span class="tag">' + tag + '</span>' : '') + cap + '</figcaption>' : '') +
+        '</figure>';
+    }).join('');
+  }
+  var galleryEl = document.getElementById('gallery');
+  if (galleryEl) {
+    fetch('content/gallery.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(renderGallery)
+      .catch(function () { /* fetch indisponible (ouverture en local) : galerie vide */ });
+  }
+
+  /* ---------- 4b. Filtres de la galerie ---------- */
   var filters = document.querySelectorAll('.filter');
-  var items = document.querySelectorAll('.gallery-item');
   filters.forEach(function (btn) {
     btn.addEventListener('click', function () {
       filters.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
       var cat = btn.getAttribute('data-filter');
-      items.forEach(function (item) {
+      document.querySelectorAll('.gallery-item').forEach(function (item) {
         var show = cat === 'all' || item.getAttribute('data-cat') === cat;
         item.classList.toggle('hide', !show);
       });

@@ -1,0 +1,36 @@
+# Configuration du panneau d'administration (Pages CMS — pagescms.org)
+# Permet à Margot de gérer ses photos depuis un panneau web, sans coder.
+# Voir GUIDE-ADMIN.md pour la connexion.
+
+media:
+  - name: images
+    label: Photos
+    input: assets/images
+    output: assets/images
+    extensions: [jpg, jpeg, png, webp, avif, svg]
+
+content:
+  - name: galerie
+    label: Galerie photos
+    description: Ajoute, réordonne ou supprime les photos affichées dans la galerie du site.
+    type: file
+    path: content/gallery.json
+    list: true
+    fields:
+      - name: image
+        label: Photo
+        type: image
+        required: true
+      - name: caption
+        label: Légende (facultatif)
+        type: string
+      - name: category
+        label: Catégorie
+        type: select
+        default: nailart
+        options:
+          values:
+            - { value: gel, label: "Pose gel" }
+            - { value: nailart, label: "Nail art" }
+            - { value: french, label: "French" }
+            - { value: entretien, label: "Entretien" }
