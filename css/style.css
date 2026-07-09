@@ -6,19 +6,19 @@
    ===================================================================== */
 
 :root {
-  /* ---- CHARTE COULEURS (modifiable) ---- */
-  --c-cream:  #FBF7F4;   /* fond principal, crème */
-  --c-ink:    #2B2422;   /* texte principal, encre */
-  --c-nude:   #C9AE9E;   /* nude / taupe */
-  --c-blush:  #C98A8A;   /* rose poudré (accent) */
-  --c-plum:   #6E4555;   /* prune profond */
-  --c-gold:   #B8933F;   /* or (détails) */
+  /* ---- CHARTE COULEURS — thème « Fleur d'oranger » (modifiable) ---- */
+  --c-cream:  #FCF6EE;   /* fond principal, ivoire chaud */
+  --c-ink:    #33281F;   /* texte principal, brun espresso */
+  --c-nude:   #E1C3A6;   /* nude pêche doux */
+  --c-blush:  #E29A6C;   /* pêche / fleur d'oranger (accent) */
+  --c-plum:   #A9502E;   /* terracotta chaud (couleur forte) */
+  --c-gold:   #C79A3A;   /* or chaud (détails) */
 
   /* ---- Dérivés (calculés à partir des couleurs ci-dessus) ---- */
   --c-white:  #FFFFFF;
-  --c-sand:   #F1E7DF;   /* carte / surface secondaire */
-  --c-line:   #E6D9CF;   /* filets, bordures douces */
-  --c-muted:  #7A6E67;   /* texte secondaire */
+  --c-sand:   #F5E9DC;   /* carte / surface secondaire */
+  --c-line:   #EBDCCB;   /* filets, bordures douces */
+  --c-muted:  #7C6B5C;   /* texte secondaire */
 
   /* ---- TYPOGRAPHIE (modifiable) ---- */
   --font-title: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
