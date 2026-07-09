@@ -73,6 +73,34 @@
       .catch(function () { /* fetch indisponible (ouverture en local) : galerie vide */ });
   }
 
+  /* ---------- 4c. Prestations : rendu depuis content/services.json ----------
+     Tarifs modifiables à la main ou via le panneau d'administration.
+  */
+  function renderServices(list) {
+    var el = document.getElementById('services');
+    if (!el || !Array.isArray(list)) return;
+    var cards = list.map(function (s) {
+      return '<article class="service reveal in">' +
+        '<div class="s-ic" aria-hidden="true">✦</div>' +
+        '<h3>' + escapeHtml(s.title) + '</h3>' +
+        '<p>' + escapeHtml(s.description) + '</p>' +
+        '<div class="s-meta"><span class="price">' + escapeHtml(s.price) + '</span>' +
+        '<span class="dur">' + escapeHtml(s.duration) + '</span></div></article>';
+    }).join('');
+    var cta = '<article class="service reveal in" style="justify-content:center; text-align:center; background:var(--c-plum); color:var(--c-cream);">' +
+      '<h3 style="color:var(--c-white);">Et bien plus…</h3>' +
+      '<p style="color:color-mix(in srgb, var(--c-cream) 82%, transparent);">Découvre l\'ensemble des soins et réserve ton créneau directement en ligne.</p>' +
+      '<a class="btn btn-ghost" style="background:var(--c-white); border-color:var(--c-white);" href="https://iarabeauty.com/fr/pro/orangeblossomnails" target="_blank" rel="noopener">Voir tous les soins</a></article>';
+    el.innerHTML = cards + cta;
+  }
+  var servicesEl = document.getElementById('services');
+  if (servicesEl) {
+    fetch('content/services.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(renderServices)
+      .catch(function () { /* fetch indisponible : section vide */ });
+  }
+
   /* ---------- 4b. Filtres de la galerie ---------- */
   var filters = document.querySelectorAll('.filter');
   filters.forEach(function (btn) {

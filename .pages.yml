@@ -34,3 +34,24 @@ content:
             - { value: nailart, label: "Nail art" }
             - { value: french, label: "French" }
             - { value: entretien, label: "Entretien" }
+
+  - name: prestations
+    label: Prestations & tarifs
+    description: Modifie les prestations, prix et durées affichés sur le site.
+    type: file
+    path: content/services.json
+    list: true
+    fields:
+      - name: title
+        label: Nom de la prestation
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: price
+        label: Prix (ex. « 50 € » ou « Sur devis »)
+        type: string
+      - name: duration
+        label: Durée (ex. « 1 h 30 »)
+        type: string
