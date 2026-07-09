@@ -1,22 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Photo de nail art (démonstration)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Orange Blossom Nails">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#EAD9D3"/>
-      <stop offset="1" stop-color="#6E4555"/>
+      <stop offset="0" stop-color="#F5E4D4"/>
+      <stop offset="1" stop-color="#A9502E"/>
     </linearGradient>
-    <linearGradient id="nailgrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#EAD9D3"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+    <radialGradient id="glow" cx="72%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <g opacity="0.96"><g transform="translate(663.6,213.2) rotate(32.0)"><rect x="-13" y="-78" width="26" height="94" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-64" r="4.5" fill="#B8933F"/><circle cx="0" cy="-48" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(705.0,256.8) rotate(61.0)"><rect x="-13" y="-88" width="26" height="104" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-74" r="4.5" fill="#B8933F"/><circle cx="0" cy="-58" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(720.0,315.0) rotate(90.0)"><rect x="-13" y="-94" width="26" height="110" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-80" r="4.5" fill="#B8933F"/><circle cx="0" cy="-64" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(705.0,373.2) rotate(119.0)"><rect x="-13" y="-88" width="26" height="104" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-74" r="4.5" fill="#B8933F"/><circle cx="0" cy="-58" r="3" fill="#ffffff" opacity=".85"/></g><g transform="translate(663.6,416.8) rotate(148.0)"><rect x="-13" y="-78" width="26" height="94" rx="13" fill="url(#nailgrad)" stroke="#ffffff" stroke-opacity=".5" stroke-width="1"/><circle cx="0" cy="-64" r="4.5" fill="#B8933F"/><circle cx="0" cy="-48" r="3" fill="#ffffff" opacity=".85"/></g></g>
-  <circle cx="192" cy="126" r="5" fill="#ffffff" opacity=".5"/>
-  <circle cx="984" cy="491" r="7" fill="#B8933F" opacity=".55"/>
-  <text x="1184" y="616" text-anchor="end" font-family="Georgia, serif" font-size="35" fill="#2B2422" opacity="0.32"></text>
-<text x="60" y="330" font-family="Georgia, serif" font-size="86" fill="#2B2422">L’Atelier Nacré</text><text x="62" y="392" font-family="Arial, sans-serif" font-size="30" fill="#6E4555" letter-spacing="4">NAIL ART &amp; BEAUTÉ DES ONGLES</text></svg>
+  <g transform="translate(980,300)" opacity="0.92">
+    <rect x="-24" y="-120" width="48" height="150" rx="24" fill="#FCF6EE"/>
+    <rect x="-24" y="-120" width="48" height="46" rx="24" fill="#C79A3A"/>
+    <ellipse cx="0" cy="60" rx="58" ry="20" fill="#FCF6EE" opacity="0.5"/>
+  </g>
+  <circle cx="150" cy="110" r="10" fill="#ffffff" opacity=".5"/>
+  <circle cx="120" cy="520" r="14" fill="#C79A3A" opacity=".6"/>
+  <text x="70" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="600" fill="#33281F">Orange Blossom Nails</text>
+  <text x="72" y="360" font-family="Arial, sans-serif" font-size="30" fill="#8a3f24" letter-spacing="5">NAIL ARTIST · GEL X · GUIDEL</text>
+  <text x="72" y="470" font-family="Arial, sans-serif" font-size="26" fill="#5b3a2a">★★★★★  Note 5/5 — Réservation en ligne</text>
+</svg>
