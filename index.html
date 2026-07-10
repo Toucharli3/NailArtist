@@ -333,44 +333,18 @@
             </div>
           </div>
 
-          <!-- Formulaire : voir GUIDE-PERSONNALISATION.md (étape 6) pour le rendre fonctionnel -->
-          <form class="form reveal" id="contactForm" novalidate>
-            <div class="form-success" id="formSuccess" role="status">
-              Merci ! Votre demande est prête. Votre logiciel de messagerie va s'ouvrir pour l'envoyer. ✨
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label for="nom">Prénom &amp; nom</label>
-                <input type="text" id="nom" name="nom" autocomplete="name" required placeholder="Ex. Léa Martin" />
-              </div>
-              <div class="field">
-                <label for="tel">Téléphone</label>
-                <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="06 …" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr" />
-            </div>
-            <div class="field">
-              <label for="presta">Prestation souhaitée</label>
-              <select id="presta" name="presta">
-                <option>Pose complète gel</option>
-                <option>Vernis semi-permanent</option>
-                <option>Nail art sur-mesure</option>
-                <option>Remplissage gel</option>
-                <option>Manucure russe</option>
-                <option>Dépose &amp; soin</option>
-                <option>Je ne sais pas encore</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Votre message</label>
-              <textarea id="message" name="message" placeholder="Vos disponibilités, vos envies, une inspiration…"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
-            <p class="form-note">En envoyant ce formulaire, vous acceptez d'être recontactée au sujet de votre demande.</p>
-          </form>
+          <!-- Bloc « Comment réserver » (réservation via iara + Instagram) -->
+          <div class="form reveal">
+            <h3 style="font-family:var(--font-title); color:var(--c-plum); font-size:1.7rem; margin:0 0 6px;">Comment réserver ?</h3>
+            <p style="color:var(--c-muted); margin:0 0 22px;">Tout se passe en ligne, en quelques clics.</p>
+            <ol style="margin:0 0 24px; padding-left:20px; color:var(--c-ink);">
+              <li style="margin:10px 0;">Choisis ta prestation et ton créneau sur la <strong>réservation en ligne</strong>.</li>
+              <li style="margin:10px 0;">Pour un <strong>premier rendez-vous</strong>, accompagne ta réservation d'un petit message (ici en DM) pour avoir toutes les infos.</li>
+              <li style="margin:10px 0;">Un <strong>acompte</strong> confirme le créneau. Paiement sur place en CB ou espèces.</li>
+            </ol>
+            <a class="btn btn-primary btn-block" href="https://iarabeauty.com/fr/pro/orangeblossomnails" target="_blank" rel="noopener">Réserver en ligne</a>
+            <a class="btn btn-ghost btn-block" style="margin-top:12px;" href="https://instagram.com/orange.blossom.nails" target="_blank" rel="noopener">M'écrire sur Instagram</a>
+          </div>
         </div>
       </div>
     </section>

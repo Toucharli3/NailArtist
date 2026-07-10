@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://toucharli3.github.io/NailArtist/sitemap.xml
