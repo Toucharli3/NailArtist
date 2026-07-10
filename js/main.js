@@ -90,7 +90,7 @@
     var cta = '<article class="service reveal in" style="justify-content:center; text-align:center; background:var(--c-plum); color:var(--c-cream);">' +
       '<h3 style="color:var(--c-white);">Prête à réserver ?</h3>' +
       '<p style="color:color-mix(in srgb, var(--c-cream) 82%, transparent);">Choisis ta prestation et ton créneau directement en ligne.</p>' +
-      '<a class="btn btn-ghost" style="background:var(--c-white); border-color:var(--c-white);" href="https://iarabeauty.com/fr/pro/orangeblossomnails" target="_blank" rel="noopener">Réserver en ligne</a></article>';
+      '<a class="btn btn-ghost" style="background:var(--c-white); border-color:var(--c-white);" href="#contact">Réserver en ligne</a></article>';
     el.innerHTML = cards + cta;
   }
   var servicesEl = document.getElementById('services');
