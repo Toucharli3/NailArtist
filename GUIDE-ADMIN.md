@@ -5,9 +5,14 @@ Ce site est relié à **Pages CMS**, un panneau web gratuit qui permet à Margot
 
 ---
 
+## Où se connecter
+
+Rends-toi sur **ton-site/admin** (ex. `orangeblossomnails.fr/admin`) : c'est ta page
+d'accueil admin, avec le bouton pour ouvrir ton espace. (Elle mène à app.pagescms.org.)
+
 ## Première connexion (une seule fois, ~2 min)
 
-1. Va sur **https://app.pagescms.org**
+1. Va sur **https://app.pagescms.org** (ou clique le bouton depuis ta page `/admin`)
 2. Clique sur **« Sign in with GitHub »** et connecte-toi avec le compte GitHub qui héberge le site.
 3. GitHub demande d'**autoriser Pages CMS** à accéder au dépôt → accepte
    (tu peux limiter l'accès au **seul dépôt `NailArtist`**).
