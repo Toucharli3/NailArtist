@@ -44,6 +44,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden; /* sécurité : jamais de scroll horizontal */
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -315,6 +316,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .about-photo { max-width: 420px; }
 }
 @media (max-width: 720px) {
+  .hero-blob { display: none; } /* formes décoratives masquées sur mobile (évitent tout débordement) */
   .nav-menu {
     position: fixed; inset: 74px 0 auto 0; flex-direction: column; gap: 0; align-items: stretch;
     background: var(--c-cream); border-bottom: 1px solid var(--c-line); box-shadow: var(--shadow);
@@ -329,8 +331,15 @@ ul { margin: 0; padding: 0; list-style: none; }
   .field-row { grid-template-columns: 1fr; }
   .about-values { grid-template-columns: 1fr; }
 }
+@media (max-width: 600px) {
+  /* Sur téléphone : une seule colonne pour éviter tout tassement / débordement */
+  .services-grid, .reviews-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 460px) {
   .gallery { grid-template-columns: 1fr 1fr; }
   .hero-stats { gap: 22px; }
 }
+/* Sécurité : les grilles ne débordent jamais leur colonne */
+.services-grid, .reviews-grid, .gallery, .footer-top, .hero-grid, .about-grid, .contact-grid, .about-values, .faq-grid { min-width: 0; }
+.services-grid > *, .reviews-grid > *, .gallery > * { min-width: 0; }
 .mobile-cta { display: none; }
