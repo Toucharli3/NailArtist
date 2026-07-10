@@ -1,15 +1,11 @@
 [
-  { "image": "assets/images/media-57665eb0-2577-422e-90d1-64a46f25cb73.webp", "caption": "Réalisation Orange Blossom", "category": "nailart" },
-  { "image": "assets/images/galerie-01.svg", "caption": "Pose gel nude", "category": "gel" },
-  { "image": "assets/images/galerie-02.svg", "caption": "Nail art fleuri", "category": "nailart" },
-  { "image": "assets/images/galerie-03.svg", "caption": "French moderne", "category": "french" },
-  { "image": "assets/images/galerie-04.svg", "caption": "Chrome miroir", "category": "nailart" },
-  { "image": "assets/images/galerie-05.svg", "caption": "Babyboomer", "category": "gel" },
-  { "image": "assets/images/galerie-06.svg", "caption": "Remplissage soigné", "category": "entretien" },
-  { "image": "assets/images/galerie-07.svg", "caption": "Ongles bijoux", "category": "nailart" },
-  { "image": "assets/images/galerie-08.svg", "caption": "French couleur", "category": "french" },
-  { "image": "assets/images/galerie-09.svg", "caption": "Semi-permanent", "category": "gel" },
-  { "image": "assets/images/galerie-10.svg", "caption": "Marbre & or", "category": "nailart" },
-  { "image": "assets/images/galerie-11.svg", "caption": "Manucure russe", "category": "entretien" },
-  { "image": "assets/images/galerie-12.svg", "caption": "Micro-French", "category": "french" }
+  { "image": "assets/images/IMG_1008.webp", "caption": "Babyboomer bleu", "category": "gel" },
+  { "image": "assets/images/IMG_1002.webp", "caption": "Nail art orange", "category": "nailart" },
+  { "image": "assets/images/IMG_1006.webp", "caption": "French classique", "category": "french" },
+  { "image": "assets/images/IMG_1004.webp", "caption": "Chrome sirène", "category": "nailart" },
+  { "image": "assets/images/IMG_1007.webp", "caption": "Rose poudré brillant", "category": "gel" },
+  { "image": "assets/images/IMG_1009.webp", "caption": "French multicolore", "category": "french" },
+  { "image": "assets/images/IMG_1003.webp", "caption": "Chrome vert & fleurs", "category": "nailart" },
+  { "image": "assets/images/IMG_1005.webp", "caption": "French jaune fleurie", "category": "french" },
+  { "image": "assets/images/media-57665eb0-2577-422e-90d1-64a46f25cb73.webp", "caption": "Nail art sur-mesure", "category": "nailart" }
 ]
